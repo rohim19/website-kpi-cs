@@ -12,7 +12,7 @@ const Dashboard = ({ onLogout }) => {
   // 👇 PERUBAHAN BARU: Ambil dari brankas browser (Local Storage) biar anti-refresh
   const [anggotaList, setAnggotaList] = useState(() => {
     const dataTersimpan = localStorage.getItem('daftarAnggota');
-    return dataTersimpan ? JSON.parse(dataTersimpan) : ['Alex', 'Daniel', 'Putra', 'Ricko'];
+    return dataTersimpan ? JSON.parse(dataTersimpan) : ['SU08 PUTRA', 'SU17 Daniel', 'SU21 ALEX', 'SU22 RICKO'];
   });
 
   // 👇 PERUBAHAN BARU: Simpan otomatis ke brankas setiap ada perubahan anggota
